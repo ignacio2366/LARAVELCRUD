@@ -1,0 +1,24 @@
+.container{
+    height:100vh;
+    background-color:whitesmoke;
+    padding:5px
+}
+.box{
+    position:relative;
+    top:15vh;
+    left:45vh;
+    width: 750px;
+    height: 550px;
+    background-color: #ff9966;
+
+}
+
+label{
+    font-size: 1.5em;
+}
+
+input{
+    width:250px;
+    height: 45px;
+    margin-left: 45px;
+}
