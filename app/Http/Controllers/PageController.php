@@ -24,7 +24,9 @@ class PageController extends Controller
         $email = $request-> input('email');
         $pass = $request-> input('password');
 
-        return "Welcome Aboiard Email: " . $email . " PAssword " . $pass . "";
+        $posts = DB::table('account_user') -> get() ;
+
+        return view('page.table',compact('posts'))->with( "Welcome Aboard Email: " . $email . " PAssword " . $pass . "");
     }
 
     public function Register()
